@@ -6,14 +6,10 @@ let n = 4;
 let quadradoLinha = "*";
 let quadradoAltura = "";
 
-for (let index = 1; index <= n; index += 1){
-    quadradoLinha = quadradoLinha + n[index];
+for (let index = 0; index < n; index += 1) {
+   quadradoAltura = quadradoAltura + quadradoLinha;
+
+    for(let index = 0; index < n; index += 1){
+        console.log(quadradoAltura);
+    }
 }
-
-for(let index = 1; index <= n; index += 1){
-    quadradoAltura = quadradoAltura + n[index];
-}
-
-console.log(quadradoLinha * quadradoAltura);
-
-//inacabado
