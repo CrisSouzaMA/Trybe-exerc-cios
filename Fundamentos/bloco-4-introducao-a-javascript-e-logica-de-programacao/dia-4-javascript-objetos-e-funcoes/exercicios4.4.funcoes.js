@@ -38,8 +38,31 @@ function indiceDoMaior(numeros) {
   //3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
   //Array de teste: [2, 4, 6, 7, 10, 0, -3]; 
 
+  function menorIndice (numbers){
+      let indice = [0];
+      for(let index = 1; index < numbers.length; index += 1){
+          if(numbers[index] < indice){
+              indice = numbers[index];
+          }else {
+              indice = [0];
+          }
+      }
+      return indice;
+  }
+  console.log(menorIndice([2, 4, 6, 7, 10, 0, -3]));
+
+
   //4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
   //Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
+  let nomes = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+  function maiorNome (nomes){
+      let sum = 0;
+        for (index = 0; index < nomes.length; index += 1){
+            sum = maiorNome[index].join(',');
+        }
+    return sum;
+  }
+  console.log(maiorNome (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
   //5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
   //Array de teste: [2, 3, 2, 5, 8, 2, 3]
