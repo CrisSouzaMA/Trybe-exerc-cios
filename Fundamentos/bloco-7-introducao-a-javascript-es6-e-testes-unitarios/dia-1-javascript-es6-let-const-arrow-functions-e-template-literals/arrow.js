@@ -70,3 +70,18 @@ const contBig = frase => {
 }
 
 console.log(contBig('Antônio foi no banheiro e não sabemos o que aconteceu'));*/
+
+// Exercicio 4
+//Crie um código JavaScript com a seguinte especificação:
+//Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e 
+//substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
+
+let stringCase = '';
+
+const subst = frase => {
+  if(frase.includes('x')){
+    let newString = stringCase.replace('x', frase);
+  }
+}
+subst("Tryber x aqui!");
+console.log(newString);
