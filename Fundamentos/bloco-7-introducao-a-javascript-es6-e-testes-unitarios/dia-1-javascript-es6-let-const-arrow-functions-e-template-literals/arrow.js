@@ -52,4 +52,21 @@ console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescen
 console.log(fat(1));*/
 
 //Crie uma função que receba uma frase e retorne qual a maior palavra.
+/*const frase = "Olá pessoa desenvolvedora";
+let big = [0];
 
+const contBig = frase => {
+  let arrWord = frase.split(' ');
+  let wordLength = 0;
+  let retorno = '';
+
+  for (const cont of arrWord){
+    if(cont.length > wordLength){
+      wordLength = cont.length;
+      retorno = cont;
+    }
+  }
+  return retorno;
+}
+
+console.log(contBig('Antônio foi no banheiro e não sabemos o que aconteceu'));*/
